@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://youkuenabler/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://youkuenabler/locale/overlay.dtd">
+<overlay id="youkuenabler-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="ff-overlay.js"/>
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="youkuenabler-strings" src="chrome://youkuenabler/locale/overlay.properties"/>
+  </stringbundleset>
+</overlay>

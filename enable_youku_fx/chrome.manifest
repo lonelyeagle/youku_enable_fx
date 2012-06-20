@@ -1,0 +1,4 @@
+content   youkuenabler                 chrome/content/
+skin      youkuenabler   classic/1.0   chrome/skin/
+locale    youkuenabler   en-US         chrome/locale/en-US/
+overlay	chrome://browser/content/browser.xul	chrome://youkuenabler/content/ff-overlay.xul

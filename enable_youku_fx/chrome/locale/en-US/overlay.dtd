@@ -1,0 +1,8 @@
+<!ENTITY youkuenabler.label "Your localized menuitem">
+<!ENTITY youkuenablerContext.label "Your Menuitem">
+<!ENTITY youkuenablerContext.accesskey "Y">
+<!ENTITY youkuenablerToolbarButton.label "Your Toolbar Button">
+<!ENTITY youkuenablerToolbarButton.tooltip "This is your toolbar button!">
+<!ENTITY youkuenablerSidebar.label "Your Sidebar">
+<!ENTITY youkuenablerToolbar.name  "example">
+<!ENTITY youkuenablerToolbar.label "This is an example toolbar. You can hide it under View &gt; toolbars &gt; &youkuenablerToolbar.name;">
