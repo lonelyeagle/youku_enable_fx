@@ -4,16 +4,18 @@
     <Description about="urn:mozilla:install-manifest">
         <em:type>2</em:type> <!-- 2 : Extension -->
         <em:id>youkuenabler@xiexuan.com</em:id>
-        <em:version>0.1</em:version>
+        <em:version>0.2</em:version>
         <em:name>YoukuEnabler</em:name>
         <em:description>This addon is used to let people don&#39;t lived in China mainland can watch Youku.com video which may be blocked to foreign IP.</em:description>
         <em:creator>Xuan Xie</em:creator>
+		<em:contributor>agunchan</em:contributor>
+		<em:contributor>zhuzhuor</em:contributor>
         <em:targetApplication>
             <Description>
                 <!-- Firefox -->
                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
                 <em:minVersion>4.0.*</em:minVersion>
-                <em:maxVersion>14.0a1</em:maxVersion>
+                <em:maxVersion>16.0a1</em:maxVersion>
             </Description>
         </em:targetApplication>
 		<em:iconURL>chrome://youkuenabler/skin/unblockPlayer.png</em:iconURL>

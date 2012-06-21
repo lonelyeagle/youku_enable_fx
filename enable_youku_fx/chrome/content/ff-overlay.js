@@ -7,6 +7,7 @@ var RE_URL_TO_MODIFY_1 = /http:\/\/*\.(xiami|ku6)\.com*/;
 var RE_URL_TO_MODIFY_2 = /http:\/\/(hot\.vrs\.sohu|hot\.vrs\.letv|data\.video\.qiyi|vv\.video\.qq|geo\.js\.kankan\.xunlei|v2\.tudou|web\-play\.pptv|dyn\.ugc\.pps|s\.plcloud\.music\.qq|inner\.kandian|ipservice\.163|v\.iask|v\.youku)\.(com|tv)*/;
 
 var TOPIC_MODIFY_REQUEST = "http-on-modify-request";
+var USER_AGENT = "User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.3 (KHTML, like Gecko) Chrome/6.0.472.33 Safari/534.3 SE 2.X MetaSr 1.0";
 
 
 var unblock_youku = {};  // namespace
@@ -26,9 +27,10 @@ var youkuObserver = {
 		if (RE_URL_TO_MODIFY_1.test(url)) { // RE_URL_TO_MODIFY is a regular expression.
 		  aSubject.setRequestHeader("X-Forwarded-For", unblock_youku.ip_addr, false);
 		} else if (RE_URL_TO_MODIFY_2.test(url)) {
-		  var timestamp = Math.round(window.mozAnimationStartTime / 1000).toString(16);
+		  var timestamp = Math.round((window.mozAnimationStartTime / 1000) - 2).toString(16);
 		  var target_host = url.match(/:\/\/(.[^\/]+)/)[1];
 		  var tag = compute_sogou_tag(timestamp + target_host + 'SogouExplorerProxy');
+		  aSubject.setRequestHeader("User-Agent", USER_AGENT, false);
 		  aSubject.setRequestHeader("X-Forwarded-For", unblock_youku.ip_addr, false);
 		  aSubject.setRequestHeader("X-Sogou-Auth", unblock_youku.sogou_auth, false);
 		  aSubject.setRequestHeader("X-Sogou-Timestamp", timestamp, false);
