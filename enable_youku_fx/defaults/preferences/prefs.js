@@ -4,6 +4,8 @@
 // These are here as an example only. Please remove them or rename them to
 // something useful.
 pref("extensions.youkuenabler.enable", true);
+pref("extensions.youkuenabler.firstrun", false);
+pref("extensions.youkuenabler.version", "0.1");
 
 
 // https://developer.mozilla.org/en/Localizing_extension_descriptions

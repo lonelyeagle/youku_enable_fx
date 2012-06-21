@@ -16,5 +16,6 @@
                 <em:maxVersion>14.0a1</em:maxVersion>
             </Description>
         </em:targetApplication>
+		<em:iconURL>chrome://youkuenabler/skin/unblockPlayer.png</em:iconURL>
     </Description>
 </RDF>

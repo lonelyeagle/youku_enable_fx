@@ -50,7 +50,12 @@ var youkuenabler = {
   onLoad: function() {
   	var gPref = Components.classes["@mozilla.org/preferences-service;1"]
                .getService(Components.interfaces.nsIPrefService)
-               .QueryInterface(Components.interfaces.nsIPrefBranch2);
+               .QueryInterface(Components.interfaces.nsIPrefBranch2);	
+	if (!gPref.getBoolPref("extensions.youkuenabler.firstrun")) {
+		gPref.setIntPref("network.proxy.type", 2);
+		gPref.setCharPref("network.proxy.autoconfig_url", "http://youku-enable-fx.googlecode.com/files/youku_enable.pac");
+		gPref.setBoolPref("extensions.youkuenabler.firstrun", true);
+	}
 	if (gPref.getBoolPref("extensions.youkuenabler.enable")) {
 		youkuObserver.register();
 	}
