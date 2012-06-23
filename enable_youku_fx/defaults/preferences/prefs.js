@@ -5,7 +5,7 @@
 // something useful.
 pref("extensions.youkuenabler.enable", true);
 pref("extensions.youkuenabler.firstrun", false);
-pref("extensions.youkuenabler.version", "0.1");
+pref("extensions.youkuenabler.version", "0.2");
 
 
 // https://developer.mozilla.org/en/Localizing_extension_descriptions
